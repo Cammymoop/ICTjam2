@@ -357,6 +357,7 @@ ICTJam2.Game.prototype = {
 
         if (!this.warps) {
             this.warps = this.game.add.group();
+            this.warps.depthVal = 0;
             this.warps.visible = false;
         }
         this.map.createFromObjects('warps', 'warp', 'nothing', null, true, false, this.warps, Phaser.Sprite, false);
