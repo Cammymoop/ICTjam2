@@ -131,7 +131,7 @@ ICTJam2.Game.prototype = {
 
         this.onMapLoad = new Phaser.Signal();
 
-        this.devAccess = false;
+        this.devAccess = true;
         this.onMapLoad.add(function () {
             if (this.currentMap !== 'map4' || this.devAccess) {
                 return;
